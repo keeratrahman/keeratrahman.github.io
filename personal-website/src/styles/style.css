@@ -1,0 +1,232 @@
+/* RESET + BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+  }
+  
+  /* HEADER */
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #35424a;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p, header a {
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* MAIN SECTIONS */
+  .bg-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 4rem 2rem;
+    overflow: hidden;
+  }
+  
+  .bg-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* GENERAL SECTION STYLES */
+  main section {
+    margin: 0;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 0.5rem;
+  }
+  
+  main p,
+  main li,
+  main ul {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  main ul {
+    list-style: disc;
+    padding-left: 2rem;
+  }
+  
+  main ul li {
+    margin-bottom: 1rem;
+  }
+  
+  strong {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  /* ABOUT ME SECTION SPECIFICS */
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    flex-shrink: 0;
+  }
+  
+  #about-me p {
+    flex: 1;
+  }
+  
+  /* CONTACT LINKS */
+  a {
+    color: #f2f2f2;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #35424a;
+    color: #cccccc;
+    font-size: 0.9rem;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 1rem;
+    }
+  
+    .content-wrapper {
+      padding: 0 1rem;
+    }
+  
+    main h2 {
+      font-size: 1.6rem;
+    }
+  }
+  /* Fade-in animation base */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Active class triggers the animation */
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.experience-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .experience-entry .text {
+    flex: 1;
+  }
+  
+  .experience-entry .gif img {
+    max-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  @media (max-width: 768px) {
+    .experience-entry {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .experience-entry .gif img {
+      max-width: 90%;
+    }
+  }
+  .education-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .education-content ul {
+    flex: 1;
+    list-style: none; /* optional if you want to remove bullet */
+    padding-left: 0;
+  }
+  
+  .school-logo img {
+    max-width: 450px; /* adjust size as needed */
+    height: auto;
+    border-radius: 8px; /* optional for rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  @media (max-width: 768px) {
+    .education-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .school-logo img {
+      margin: 0 auto;
+    }
+  }
+  
