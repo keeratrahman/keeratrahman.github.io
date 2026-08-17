@@ -111,8 +111,17 @@
     <p>
       Email: <a href="mailto:krahman34@gatech.edu">krahman34@gatech.edu</a> | 
       Phone: 470-218-6520 | 
-      <a href="https://linkedin.com/in/keerat-rahman" target="_blank">LinkedIn</a>
+      <a href="https://linkedin.com/in/keerat-rahman" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/keeratrahman" target="_blank">GitHub</a>
     </p>
+    <nav class="site-nav">
+      <a href="#about-me">About</a>
+      <a href="#education">Education</a>
+      <a href="#work-experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
@@ -122,7 +131,7 @@
         <h2>About Me</h2>
         <div class="about-content">
           <img src="images/keerat.jpg" alt="Keerat Rahman" class="profile-pic fade-in">
-          <p class="fade-in">Hi! I'm Keerat Rahman...</p>
+          <p class="fade-in">Hi! I'm Keerat Rahman, a Computer Science student at Georgia Tech pursuing a combined BS+MS with a focus in security engineering. I'm currently interning at Deloitte, where I work on Oracle Cloud IAM and role provisioning — designing least-privilege access models and RBAC structures for enterprise clients. I'm passionate about the intersection of identity, security, and software engineering, and I enjoy building projects that put that knowledge into practice, like my machine learning system for detecting insider threats.</p>
         </div>
       </section>
       
@@ -134,11 +143,16 @@
           <div class="education-content">
             <ul>
               <li> 
-                <strong>B.S. in Computer Science</strong><br/>
+                <strong>BS + MS in Computer Science</strong><br/>
                 Georgia Institute of Technology, Atlanta, GA<br/>
-                Expected Graduation: May 2026<br/>
+                Expected Graduation: May 2027<br/>
+                Focus: Security Engineering<br/>
                 Concentrations: Artificial Intelligence, Cybersecurity<br/>
                 Minor: Political Science
+              </li>
+              <li>
+                <strong>CompTIA Security+</strong><br/>
+                Certification in core security principles, risk management, and network/IAM fundamentals
               </li>
             </ul>
             <div class="school-logo">
@@ -153,11 +167,21 @@
   <section id="work-experience" class="bg-section fade-in" data-bg="images/GoldenGateBridge.jpeg">
     <div class="content-wrapper">
       <h2>Work Experience</h2>
-  
-      <!-- First Experience -->
+
+      <!-- Deloitte -->
       <div class="experience-entry">
         <div class="text">
-          <strong>NPI Software Intern – Keysight Technologies - Santa Rosa, CA (May 2025 – Present)</strong><br/>
+          <strong>IAM Consulting Intern – Deloitte <!-- TODO: confirm location --> (<!-- TODO: confirm start date -->Present)</strong><br/>
+          - Support Oracle Cloud IAM role provisioning and access governance for enterprise clients.<br/>
+          - Design and implement least-privilege access models and role-based access control (RBAC) structures.<br/>
+          - Work across separation-of-duties (SoD) requirements to reduce access risk and support compliance audits.
+        </div>
+      </div>
+
+      <!-- Keysight (NPI) -->
+      <div class="experience-entry">
+        <div class="text">
+          <strong>NPI Software Intern – Keysight Technologies - Santa Rosa, CA (May 2025 – <!-- TODO: add end date, since Deloitte is now current -->)</strong><br/>
           - Automated integration of marketing content and test data in C# using Word, Excel, and databases.<br/>
           - Designed a user-friendly UI and parsing script to extract 1,000+ tables into formatted datasheets.<br/>
           - Integrated features into a legacy codebase and developed a dynamic report database.
@@ -200,6 +224,13 @@
     <section id="projects" class="bg-section" data-bg="images/projects-bg.jpg">
       <div class="content-wrapper">
         <h2>Projects</h2>
+        <div class="featured-project">
+          <strong>Insider Threat Anomaly Detection System</strong><br/>
+          - Built an end-to-end ML system to detect insider threat behavior using the CERT Insider Threat Dataset (r4.2).<br/>
+          - Trained an Isolation Forest anomaly detection model and served predictions via a FastAPI backend.<br/>
+          - Containerized the application with Docker and deployed it to AWS EC2.<br/>
+          <a href="https://github.com/keeratrahman<!-- TODO: confirm repo name -->" target="_blank">View on GitHub →</a>
+        </div>
         <ul>
           <li>
             <strong>Company Database Project (Aug 2023)</strong><br/>
@@ -218,6 +249,42 @@
             - Built subroutines and a text editor using LC-3 Assembly and user stack for memory.
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-section" data-bg="images/TechTower.png">
+      <div class="content-wrapper">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <strong>Security &amp; IAM</strong>
+            <ul>
+              <li>Identity &amp; Access Management</li>
+              <li>RBAC / Least Privilege</li>
+              <li>Separation of Duties</li>
+              <li>CompTIA Security+</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <strong>Cloud &amp; DevOps</strong>
+            <ul>
+              <li>AWS (EC2)</li>
+              <li>Oracle Cloud</li>
+              <li>Azure</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <strong>Languages &amp; ML</strong>
+            <ul>
+              <li>Python</li>
+              <li>C# / C++</li>
+              <li>FastAPI</li>
+              <li>scikit-learn</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
