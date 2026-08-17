@@ -2,9 +2,9 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "A personal website to showcase projects and skills.",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
-    "start": "live-server src",
+    "start": "live-server .",
     "build": "echo 'Build step not defined'",
     "test": "echo 'No tests defined'"
   },
